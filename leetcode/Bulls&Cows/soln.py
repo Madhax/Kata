@@ -9,8 +9,8 @@ class Solution:
         while x < len(secret):
             if secret[x] == guess[x]:
                 bullCount+=1
-                del(secret[x])
-                del(guess[x])
+                secret.pop(x)
+                guess.pop(x)
             else:
                 x+=1
                

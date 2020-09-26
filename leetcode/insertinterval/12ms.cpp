@@ -44,4 +44,4 @@ public:
         if((i+1)>=intervals.size() || (i+1)>j) return;
         intervals.erase(intervals.begin()+i+1,intervals.begin() + j + 1);
     }
-};
+};4
