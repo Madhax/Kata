@@ -18,3 +18,6 @@ class Solution:
     
     def is_palindrome(self, s):
         return s == s[::-1]
+
+
+        18+35+1
