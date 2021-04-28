@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 U = []
 A = 0
 B = 0
@@ -65,7 +65,7 @@ if __name__ == "__main__":
         U = list(map(int, input().split()))
         print(f"Case #{t}: {solve()}")
 
-=======
+"""
 from functools import *
 import sys
 import math
@@ -123,4 +123,4 @@ if __name__ == "__main__":
             soln = min(dp(1, False), dp(1, True))
 
         print(f"Case #{test}: {soln}")
->>>>>>> 10e847c23284beac0e5647c1a49906beaed6dc1b
+"""

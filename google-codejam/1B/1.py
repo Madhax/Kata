@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import itertools
 
 TICKS = 360 * 12 * 10**10
@@ -50,7 +49,7 @@ if __name__ == "__main__":
          A, B, C = list(map(int, input().split()))
          
          print(f"Case #{test}: {solve(A,B,C)}")
-=======
+"""
 import math
 
 totalTicks = 43200000000000
@@ -130,4 +129,4 @@ if __name__ == "__main__":
     for test in range(1, t + 1):
         angles = list(map(int, input().split()))
         print(f"Case #{test}: {solve(angles)}")
->>>>>>> 10e847c23284beac0e5647c1a49906beaed6dc1b
+"""
