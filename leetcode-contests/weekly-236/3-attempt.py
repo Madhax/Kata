@@ -102,3 +102,25 @@ class Solution:
             return best
         
         return dp(0, 2)
+
+
+        """def bfs():
+            
+            q = []
+            
+            q.append((0, 0, 2))
+            
+            while len(q):
+                n, sidejumps, lane = q.pop()
+                
+                if n == N-1:
+                    return sidejumps
+                
+                for (njump, sjump) in [[1, 0], [0, -2], [0, -1], [0, 1], [0, 2]]:
+                    if njump == 1 and obstacles[n+1] != lane:
+                        q.append((n+1, sidejumps, lane))
+                        
+                    elif 1 <= sidejumps + sjump <= 3 and obstacles[n] != sidejumps + sjump:
+                        q.append((n, sidejumps+1, sidejumps+sjump))
+                
+            return 0"""

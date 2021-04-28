@@ -41,3 +41,5 @@ class Solution:
                 output += 1
         return output
         """
+
+        4+3+2+1
