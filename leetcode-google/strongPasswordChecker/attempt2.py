@@ -34,7 +34,7 @@ class Solution:
                 best = min(best, dp(index+1, length+1, newHasLowerCase, newHasUpperCase, newHasDigit, consecutives+1, password[index]))
         
             #skip
-            #best = min(best, dp(index+1, length+1, newHasLowerCase, newHasUpperCase, newHasDigit, consecutives+1, password[index]))
+            best = min(best, dp(index+1, length+1, newHasLowerCase, newHasUpperCase, newHasDigit, consecutives, password[index]))
 
             #replace
             best = min(best, 1 + dp(index+1, length+1, True, hasUpperCase, hasDigit, 0, ''))
