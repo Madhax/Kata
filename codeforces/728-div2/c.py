@@ -1,12 +1,15 @@
 from bisect import *
 import math
 def solve(arr):
+    if len(arr) == 2:
+        return 0
 
     arr.sort()
     cost = 0
+
     for x in range(1, len(arr)):
         cost += (arr[x] - arr[x-1])
-        print(arr[x] - arr[x-1])
+        #print(arr[x] - arr[x-1])
 
     cost += (arr[0] - arr[-1])
     return cost
