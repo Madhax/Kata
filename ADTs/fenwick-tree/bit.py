@@ -28,6 +28,17 @@ class BinaryIndexTree(object):
 
         return ret
 
+def altBuild(list):
+    nums = [0 for _ in range(n+1)]
+
+    for idx, val in enumerate(list):
+        idx += 1
+        p = idx + (idx & -idx)
+        if p < len(nums):
+            nums[p] = nums[p] + nums[i]
+
+    return nums
+
 class NumArray(object):
     def __init__(self, nums):
         self.bit = BinaryIndexTree(nums)
